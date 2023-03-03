@@ -1,0 +1,14 @@
+.folio__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.folio__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right:  5rem;
+}
