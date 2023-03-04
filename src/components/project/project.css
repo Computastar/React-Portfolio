@@ -6,6 +6,11 @@
     flex-direction: row;
 
     margin: 1rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--colour-text);
 }
 
 .folio__projects-container__project-title {
