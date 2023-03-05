@@ -11,7 +11,7 @@ const Projects = () => {
 
   // second argument
   
- 
+  let publicRepos = {};
     const [repos, setRepos] = useState([]);
     const [decode, setDecode] = useState([]);
     const [screenshot, setScreenshot] = useState(null)
@@ -19,42 +19,47 @@ const Projects = () => {
     const getRepos = async () => {
       const response = await fetch(url);
       const repos = await response.json();
-      setRepos(repos);
-       console.log(repos);
+
+      const publicRepos = repos.filter( repo => {
+        return repo.private === false
+      })
+
+
+
+      setRepos(publicRepos);
+       console.log(publicRepos);
     };
 
     const getDecode = async () => {
       const response = await fetch('https://api.github.com/repos/computastar/bootstrap-portfolio/contents/README.md');
       const decode = await response.json()
-      console.log(decode.content);
+      //console.log(decode.content);
       const decoded = base64_decode(decode.content);
-      console.log(decoded)
+      //console.log(decoded)
     }
 
-    const getScreenshot = async function onLoad() {
-       await octokit.request(
-       'GET /repos/{owner}/{repo}/actions/variables', {
-           owner: 'computastar',
-           repo: 'Day-Planner'
-      }).then(res => setScreenshot(res.data.variables[0].value)
-      )
-      console.log(screenshot)
-    }
 
    
     useEffect(() => {
       getRepos();
       getDecode();
-      getScreenshot();
     }, []);
 
   return (
     <div className='folio__projects section__Margin' id='projects'>
       <div className='folio__projects-container'>
         {repos.map( repo => (
-          <Project key={repo.id} title={repo.name} deployed={repo.html_url}  repository={repo.full_name} />
+
+          <Project key={repo.id} 
+                   title={repo.name} 
+                   deployed={repo.homepage}  
+                   repository={repo.html_url}
+                   
+          />
+
           ) 
-        )}
+        )
+        }
       </div>
         
     </div>

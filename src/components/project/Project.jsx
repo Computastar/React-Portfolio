@@ -1,5 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react'
 import './project.css'
+import banner from '../../assets/cstar_banner.png'
+
 
 const Project = ({title, deployed, repository, screenshot}) => {
   return (
@@ -8,14 +11,21 @@ const Project = ({title, deployed, repository, screenshot}) => {
         <div />
         <h1>{title}</h1>
         </div>
-        <div className='folio__projects-container_project-deployed'>
-          <p>{deployed}</p>
+        <div className='folio__projects-container_project-deployed '>
+          { (deployed)===null
+            ? <p>No deployed GitHub pages</p>
+            : <a href={deployed}>View Deployed Site</a>
+          }
+
       </div>
-      <div className='folio__projects-container_project-repository'>
-          <p>{repository}</p>
+      <div className='folio__projects-container_project-repository '>
+        { (repository==="")
+          ? <p>No GitHub repository</p>
+          : <a href={repository}>View Repository</a>
+        }
     </div>
     <div className='folio__projects-container_project-image'>
-          <img src='https://github.com/Computastar/Day-Planner/blob/main/assets/images/05-third-party-apis-homework-demo.gif' alt="" />
+          <img src={require('../../assets/cstar_banner.png')} alt="" />
     </div>
   </div>
   )

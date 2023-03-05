@@ -65,17 +65,18 @@
 }
 
 .folio__projects-container {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
 
-    margin-top: 2rem;
+    margin-top: 25px;
 }
 
 /* Customizing project component as per needs */
 .folio__projects-container .folio__projects-container__project {
-    flex: 1;
-    margin: 1rem;
+    flex: 10;
+    margin: 5rem;
+    /*padding: 1rem 3rem 1rem 3rem;*/
     min-width: 210px;
     display: unset;
     flex-direction: column;
