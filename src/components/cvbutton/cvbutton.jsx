@@ -13,10 +13,15 @@ function CVButton() {
 
     const [email, setEmail] = useState('');
 
+    const [paragraphText, setParagraphText] = useState('Enter a valid email address below, you will be sent a validation email.');
+
     const [buttonText, setButtonText] = useState('Request CV');
 
-    function handleClick(newText) {
+    
+
+    function handleClick(newText, paragraphText) {
         setButtonText(newText);
+        setParagraphText(paragraphText)
       }
 
     function downloadCV () {
@@ -40,18 +45,16 @@ function CVButton() {
       console.log(currentUser)
       if (auth.currentUser?.emailVerified || currentUser?.EMAIL_EXISTS)
       {
-        alert("already verified")
-        //auth.signOut();
-        handleClick("Download CV");
+        handleClick("Download CV", "Your email has been verified, enjoy my CV");
         downloadCV();
+        auth.signOut();
       }
       else {
       createUserWithEmailAndPassword(auth, email,randomPWD(6))
       .then((userCredential) => {
         sendEmailVerification(auth.currentUser);
         //auth.signOut();
-        alert("Email Sent")
-        handleClick("Verify Email");
+        handleClick("Verify Email", "Check the email for details. Follow the instructions");
       }).catch((err) => alert(err.message))
     }
     }
@@ -69,23 +72,25 @@ function CVButton() {
     }
     
     return (
-      <div className='cvbutton'>
-        <br/><br/>
-        <input type="email" placeholder='EMail'
-        onChange={(e) => {setEmail(e.target.value)}}>
-        </input>
-        <br/><br/>
-        {/* <input type="password" placeholder="password" 
-        onChange={(e)=>{setpassword(e.target.value)}}>
-        </input> */}
-        <br></br>
-        {/* {(!currentUser.emailVerified)
-           ? <button onClick={downloadCV}>Get CV</button>
-           : <button onClick={downloadCV}>Download CV</button>
-    } */}
+      <div className="folio__cvbutton">
+  
+        <p className="folio__cvbutton-details">
+            {paragraphText}
+         
+        </p>
+
+        <input
+          type="email"
+          placeholder="EMail"
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+        ></input>
+
+        <div>
         <button onClick={requestCV}>{buttonText}</button>
+        </div>
       </div>
-      
     );
   }
   

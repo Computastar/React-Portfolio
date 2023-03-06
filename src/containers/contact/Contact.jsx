@@ -27,11 +27,11 @@ const Contact = () => {
                 </ul>
               </div>
       </div>
-      </div>
-          <div className="folio__contact-content-CV">
+      <div className="folio__contact-content-CV">
             <CVButton></CVButton>
           </div>
-    </div>
+      </div>
+   </div>
   )
 }
 
