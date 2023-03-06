@@ -5,8 +5,6 @@ import {createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/a
 
 import './cvbutton.css'
 
-
-
 function CVButton() {
 
     const {currentUser} = useAuthValue()

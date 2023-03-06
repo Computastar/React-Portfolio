@@ -1,7 +1,7 @@
 import {React} from 'react';
 
-import { Home, NavBar, Project} from './components';
-import { About, Contact, Header, Footer, Projects} from './containers';
+import { NavBar} from './components';
+import {  Contact, Header, Projects} from './containers';
 import './App.css';
 import { useState, useEffect } from 'react';
 import {AuthProvider} from '../src/services/AuthContext'
@@ -24,10 +24,8 @@ const App = () => {
             <NavBar />
             <Header />
         </div>
-      <About />
       <Projects />
       <Contact />
-      <Footer />
       </AuthProvider>
     </div>
   )
