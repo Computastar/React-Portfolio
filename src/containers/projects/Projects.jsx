@@ -1,6 +1,6 @@
 import React, {useState, useEffect } from 'react'
-import { decode as base64_decode} from 'base-64';
-import { octokit } from '../../services/octokit';
+//import { decode as base64_decode} from 'base-64';
+//import { octokit } from '../../services/octokit';
 import  Project  from '../../components/project/Project'
 
 import './projects.css'
@@ -11,10 +11,10 @@ const Projects = () => {
 
   // second argument
   
-  let publicRepos = {};
+  //let publicRepos = {};
     const [repos, setRepos] = useState([]);
-    const [decode, setDecode] = useState([]);
-    const [screenshot, setScreenshot] = useState(null)
+    //const [decode, setDecode] = useState([]);
+    //const [screenshot, setScreenshot] = useState(null)
   
     const getRepos = async () => {
       const response = await fetch(url);
@@ -23,26 +23,23 @@ const Projects = () => {
       const publicRepos = repos.filter( repo => {
         return repo.private === false
       })
-
-
-
       setRepos(publicRepos);
        console.log(publicRepos);
     };
 
-    const getDecode = async () => {
+    /*const getDecode = async () => {
       const response = await fetch('https://api.github.com/repos/computastar/bootstrap-portfolio/contents/README.md');
       const decode = await response.json()
       //console.log(decode.content);
       const decoded = base64_decode(decode.content);
       //console.log(decoded)
-    }
+    }*/
 
 
    
     useEffect(() => {
       getRepos();
-      getDecode();
+      //getDecode();
     }, []);
 
   return (
@@ -54,6 +51,7 @@ const Projects = () => {
                    title={repo.name} 
                    deployed={repo.homepage}  
                    repository={repo.html_url}
+                   screenshot={repo.description}
                    
           />
 
