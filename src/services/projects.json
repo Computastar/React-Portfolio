@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "name": "Weather Dashboard",
+        "pages": "https://computastar.github.io/Weather-Dashboard/",
+        "repo": "https://github.com/Computastar/Weather-Dashboard",
+        "image": "../../assets/1.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Password Generator",
+        "pages": "https://computastar.github.io/Password-Generator/",
+        "repo": "https://github.com/Computastar/Password-Generator",
+        "image": "../../assets/2.png"
+    },
+    {
+        "id": 3,
+        "name": "Day Planner",
+        "pages": "https://computastar.github.io/Day-Planner/",
+        "repo": "https://github.com/Computastar/Day-Planner",
+        "image": "../../assets/3.gif"
+    },
+    {
+        "id": 4,
+        "name": "Quiz",
+        "pages": "https://computastar.github.io/Quiz/",
+        "repo": "https://github.com/Computastar/Quiz",
+        "image": "../../assets/1.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Bootstrap Portfolio",
+        "pages": "https://computastar.github.io/Bootstrap-Portfolio/",
+        "repo": "https://github.com/Computastar/Bootstrap-Portfolio",
+        "image": "../../assets/5.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Team Profile Generator",
+        "pages": "Not Applicable",
+        "repo": "https://github.com/Computastar/Team-Profile-Generator",
+        "image": "../../assets/6.jpeg"
+    }
+    
+    
+]

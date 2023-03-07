@@ -1,50 +1,35 @@
-import React, {useState, useEffect } from 'react'
-//import { decode as base64_decode} from 'base-64';
+import React, { Component } from 'react'
+
 import  Project  from '../../components/project/Project'
+import projects from '../../services/projects.json'
 
 import './projects.css'
 
+class Projects extends Component {
+  state = {
+    projects
+  }
 
-const Projects = () => {
-  const url = 'https://api.github.com/users/computastar/repos';
 
-    const [repos, setRepos] = useState([]);
 
-    //const [screenshot, setScreenshot] = useState(null)
-  
-    const getRepos = async () => {
-      const response = await fetch(url);
-      const repos = await response.json();
 
-      const publicRepos = repos.filter( repo => {
-        return repo.private === false
-      })
-      setRepos(publicRepos);
-       console.log(publicRepos);
-    };
-
-       useEffect(() => {
-      getRepos();
-    }, []);
-
+render()  {
   return (
     <div className='folio__projects section__Margin' id='projects'>
       <div className='folio__projects-container'>
-        {repos.map( repo => (
-
-          <Project key={repo.id} 
-                   title={repo.name} 
-                   deployed={repo.homepage}  
-                   repository={repo.html_url}
-                   screenshot={repo.description}
+        {this.state.projects.map(project => (
+          <Project 
+                  key={project.id} 
+                   name={project.name} 
+                   pages={project.pages}  
+                   repo={project.repo}
+                   image={project.image}
           />
-          ) 
-        )
-        }
+          ))}
       </div>
-        
     </div>
-  )
+  );
 }
+};
 
 export default Projects
