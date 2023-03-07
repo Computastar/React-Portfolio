@@ -1,0 +1,26 @@
+.folio__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.folio__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin: 1rem 1rem 1rem 5rem;
+    /*margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right:  5rem;*/
+}
+
+.folio__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+    margin-bottom: 1rem;
+}
