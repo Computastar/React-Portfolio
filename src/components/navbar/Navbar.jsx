@@ -25,9 +25,6 @@ const Navbar = () => {
           <Menu />
         </div>
       </div>
-      <div className='folio__navbar-CV'> 
-      <button type="button">Download CV</button>
-      </div>
       <div className='folio__navbar-menu'>
         {toggleMenu
         ? <RiCloseLine color='#fff' size={27} onClick={() => setToggleMenu(false)} />
