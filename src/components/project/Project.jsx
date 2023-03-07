@@ -1,5 +1,7 @@
 import React from 'react'
 import './project.css'
+import '../../assets/1.jpeg';
+
 
 
 function Project(props) {
