@@ -23,7 +23,7 @@ const App = () => {
     <Router>
     <div className='App'>
     <AuthProvider value={{currentUser}}>
-    <NavBar />;
+
     <Header />
     <Routes>
           <Route exact path="/" element={<Home/>} />
