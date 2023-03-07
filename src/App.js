@@ -19,7 +19,7 @@ const App = () => {
   }, [])
 
   return (
-    <Router>
+
     <div className='App'>
     <AuthProvider value={{currentUser}}>
 
@@ -32,7 +32,7 @@ const App = () => {
 
     </AuthProvider>
     </div>
-   </Router>
+
   )
 }
 
