@@ -1,30 +1,39 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React, { useState, useCallback } from 'react'
+import React, { useState } from 'react'
 import './project.css'
-import banner from '../../assets/cstar_banner.png'
+/*import banner from 'https://github.com/Computastar/Team-Profile-Generator/blob/main/assets/MyTeam_.jpeg'*/
 
 
 const Project = ({title, deployed, repository, screenshot}) => {
 
-  const [imagePath, setImagePath] = useState("");
+const [imagePath, setImagePath] = useState("");
   
   const getScreenshot = async (screenshot) => {
-        let ss = ""
+    try {
+              let ss = ""
         let sp = 0
-          //console.log(screenshot.screenshot)
+          console.log(screenshot.screenshot)
           ss = screenshot.screenshot
           //ss = ss.toLocaleLowerCase();
-          //console.log(ss)
+          console.log(ss)
           sp = ss.search('screenshot=');
          //console.log(ss)
-         console.log(ss.slice(sp+11))
-         setImagePath(ss.slice(sp+11))
+        
+         ss = ss.slice(sp+11)
+         console.log(typeof ss)
+         console.log(ss)
+         setImagePath("'" + ss + "'")
          //return ()
+        } catch (error) {
+          console.log({error}) 
+        }
   };
 
-  useCallback(() => {
+  //getScreenshot({screenshot});
+
+  /*useState(() => {
     getScreenshot({screenshot});
-  }, []);
+  }, []);*/
 
   return (
     <div>
@@ -52,7 +61,6 @@ const Project = ({title, deployed, repository, screenshot}) => {
           : <img src={require(imagePath)} alt="" />
           
       */}
-      <img src={require('../../assets/cstar_banner.png')} alt="" />
     </div>
   </div>
   </div>

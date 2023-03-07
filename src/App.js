@@ -1,7 +1,6 @@
 
 import {React} from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import NavBar from '../src/components/navbar/Navbar'
 import {  Contact, Home, Projects, Header} from './containers';
 import './App.css';
 import { useState, useEffect } from 'react';
