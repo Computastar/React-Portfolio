@@ -1,4 +1,6 @@
+
 import {React} from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import { NavBar} from './components';
 import {  Contact, Header, Projects} from './containers';
@@ -18,7 +20,12 @@ const App = () => {
   }, [])
 
   return (
+    <Router>
     <div className='App'>
+    <Route path="/" element={<Header />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<Contact />} />
+
        <AuthProvider value={{currentUser}}>
         <div className='gradient__bg'>
             <NavBar />
@@ -28,6 +35,7 @@ const App = () => {
       <Contact />
       </AuthProvider>
     </div>
+  </Router>
   )
 }
 
