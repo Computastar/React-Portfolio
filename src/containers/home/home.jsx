@@ -1,8 +1,8 @@
 import React from 'react';
 import bio from '../../assets/Bio-Pic.png';
-import './header.css'
+import './home.css'
 
-const Header = () => {
+const Home = () => {
   return (
     <>
    <div className='folio__header section__Padding' id='home'>
@@ -23,4 +23,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Home

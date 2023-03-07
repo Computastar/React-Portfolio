@@ -2,7 +2,7 @@
 import {React} from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import NavBar from '../src/components/navbar/Navbar'
-import {  Contact, Header, Projects} from './containers';
+import {  Contact, Home, Projects} from './containers';
 import './App.css';
 import { useState, useEffect } from 'react';
 import {AuthProvider} from '../src/services/AuthContext'
@@ -25,7 +25,7 @@ const App = () => {
     <NavBar />;
 >
     <Routes>
-          <Route exact path="/" element={<Header />} />
+          <Route exact path="/" element={<Home/>} />
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/contact" element={<Contact />} />
     </Routes>
