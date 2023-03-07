@@ -27,6 +27,7 @@ const Project = ({title, deployed, repository, screenshot}) => {
   }, []);
 
   return (
+    <div>
     <div className='folio__projects-container__project'>
       <div className='folio__projects-container__project-title'>
         <div />
@@ -53,6 +54,7 @@ const Project = ({title, deployed, repository, screenshot}) => {
       */}
       <img src={require('../../assets/cstar_banner.png')} alt="" />
     </div>
+  </div>
   </div>
   )
 }

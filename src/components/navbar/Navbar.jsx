@@ -1,19 +1,25 @@
 import React, { useState } from 'react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-
+import { Link } from 'react-router-dom';
 
 import logo from '../../assets/cstar_banner.png'
 import './navbar.css'
 
 const Menu = () => (
-  <>
-    <p><a href='#home'>Home</a></p>
-    <p><a href='#projects'>Projects</a></p>
-    <p><a href='#contact'>Contact</a></p>
+<>  
+<Link to='/' className='folio__navbar-links_container'>
+      <p>home</p>
+</Link>
+<Link to='/projects' className='folio__navbar-links_container'>
+      <p>projects</p>
+</Link>
+<Link to='/contact' className='folio__navbar-links_container'>
+      <p>Contact</p>
+</Link>
   </>
 )
 
-const Navbar = () => {
+const NavBar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
   return (
     <div className='folio__navbar'>
@@ -34,9 +40,6 @@ const Navbar = () => {
             <div className="folio__navbar-menu_container-links">
               <Menu />
             </div>
-            <div className="folio__navbar-menu_container-links-CV">
-            <button type="button">Download CV</button>
-          </div>
         </div>
         )}
       </div>
@@ -45,4 +48,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavBar

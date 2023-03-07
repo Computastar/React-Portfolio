@@ -1,8 +1,7 @@
 
 import {React} from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
-import { NavBar} from './components';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import NavBar from '../src/components/navbar/Navbar'
 import {  Contact, Header, Projects} from './containers';
 import './App.css';
 import { useState, useEffect } from 'react';
@@ -22,20 +21,18 @@ const App = () => {
   return (
     <Router>
     <div className='App'>
-    <Route path="/" element={<Header />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="contact" element={<Contact />} />
+    <AuthProvider value={{currentUser}}>
+    <NavBar />;
+>
+    <Routes>
+          <Route exact path="/" element={<Header />} />
+          <Route exact path="/projects" element={<Projects />} />
+          <Route exact path="/contact" element={<Contact />} />
+    </Routes>
 
-       <AuthProvider value={{currentUser}}>
-        <div className='gradient__bg'>
-            <NavBar />
-            <Header />
-        </div>
-      <Projects />
-      <Contact />
-      </AuthProvider>
+    </AuthProvider>
     </div>
-  </Router>
+   </Router>
   )
 }
 

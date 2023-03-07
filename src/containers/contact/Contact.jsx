@@ -4,7 +4,7 @@ import CVButton from '../../components/cvbutton/cvbutton'
 
 const Contact = () => {
   return (
-    <div className='folio__contact section__padding' id='contact'>
+        <div className='folio__contact section__padding' id='contact'>
       <div className='folio__contact-content'>
         <h4>Contact details</h4>
         <h1 className='gradient__text'>Drop me a line</h1>

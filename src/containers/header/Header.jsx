@@ -4,7 +4,8 @@ import './header.css'
 
 const Header = () => {
   return (
-    <div className='folio__header section__Padding' id='home'>
+    <>
+   <div className='folio__header section__Padding' id='home'>
       <div className='folio__header-content'>
         <h1 className='gradient__text'> Jason Hunter </h1>
           <h2>Its All About Me</h2>
@@ -18,6 +19,7 @@ const Header = () => {
       </div>
       Header
     </div>
+    </>
   )
 }
 
