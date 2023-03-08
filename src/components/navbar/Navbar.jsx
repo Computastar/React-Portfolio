@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 
@@ -16,7 +16,7 @@ const Menu = () => (
 <Link to='/contact' className='folio__navbar-links_container'>
       <p>Contact</p>
 </Link>
-  </>
+</>
 )
 
 const NavBar = () => {
@@ -43,7 +43,6 @@ const NavBar = () => {
         </div>
         )}
       </div>
-      NavBar
     </div>
   )
 }

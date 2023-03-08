@@ -1,12 +1,13 @@
 import React from 'react'
 import './contact.css'
+import { SocialIcon } from 'react-social-icons';
+
 import CVButton from '../../components/cvbutton/cvbutton'
 
 const Contact = () => {
   return (
         <div className='folio__contact section__padding' id='contact'>
       <div className='folio__contact-content'>
-        <h4>Contact details</h4>
         <h1 className='gradient__text'>Drop me a line</h1>
 
       <section className='folio__send-email-section'>
@@ -16,12 +17,15 @@ const Contact = () => {
       <div className='folio__social-container'>
               <div>
                 <ul className='folio__social-icons'>
-                    <li><a href="https://github.com/Computastar" alt="GitHib icon" target="_blank" rel="noreferrer noopener"><i
-                                className='folio__fa folio__fa-github'></i></a></li>
-                    <li><a href="https://twitter.com/computastar" alt="Twitter icon" target="_blank" rel="noreferrer noopener"><i
-                                className='folio__fa folio__fa-twitter'></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/jason-hunter-3999171/" alt="Linkedin icon" target="_blank"
-                            rel="noreferrer noopener"><i className='folio__fa folio__fa-linkedin'></i></a></li>
+                    <li>
+                      <SocialIcon url="https://github.com/Computastar" target="_blank" bgColor="#ff5a01"/>
+                    </li>
+                    <li>
+                      <SocialIcon url="https://twitter.com/computastar" target="_blank" bgColor="red"/>            
+                    </li>
+                    <li>
+                      <SocialIcon url="https://www.linkedin.com/in/jason-hunter-3999171/" target="_blank" bgColor='purple'/>
+                    </li>
                 </ul>
               </div>
       </div>

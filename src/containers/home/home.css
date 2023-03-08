@@ -64,8 +64,10 @@
     }
 
     .folio__home-content {
-        margin: 0 0 3rem;
+        margin: 1rem 1rem 1rem 1rem;
     }
+
+ 
 }
 
 @media screen and (max-width: 650px) {

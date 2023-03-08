@@ -17,7 +17,6 @@ const Home = () => {
       <div className='folio__home-image'>
         <img src={bio} alt=""/>
       </div>
-      home
     </div>
     </>
   )

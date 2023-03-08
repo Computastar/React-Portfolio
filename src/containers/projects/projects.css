@@ -76,7 +76,6 @@
 .folio__projects-container .folio__projects-container__project {
     flex: 20% ;
     margin: 1rem 7rem 1rem 7rem;
-    /*padding: 1rem 3rem 1rem 3rem;*/
     min-width: 210px;
     display: flex;
     flex-direction: column;
