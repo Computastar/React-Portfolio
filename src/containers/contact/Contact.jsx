@@ -8,8 +8,6 @@ const Contact = () => {
       <div className='folio__contact-content'>
         <h4>Contact details</h4>
         <h1 className='gradient__text'>Drop me a line</h1>
-        <p> Show me some love</p>
-      
 
       <section className='folio__send-email-section'>
       <a className='folio__send-email' href="mailto:email@example.com?subject=Mail from our Website">Let's touch base send me an Email <span className="send-email-tooltip">This is just a demo email not operational</span>

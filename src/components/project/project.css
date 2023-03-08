@@ -1,8 +1,8 @@
 .folio__projects-container__project {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /*justify-content: space-between;
+    /*align-items: self-start;*/
     flex-direction: row;
 
     margin: 1rem;
@@ -23,7 +23,7 @@
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.04em;
-    color: #fff;
+    color: var(--colour-footer);
 }
 
 
@@ -49,6 +49,15 @@
     text-overflow: clip;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+
+.card-img {
+    min-height: 200px;
+    max-height: 250px;
+}
 .folio__Project-Card-Link {
     font-family: var(--font-family);
     font-weight: 500;

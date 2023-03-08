@@ -74,11 +74,11 @@
 
 /* Customizing project component as per needs */
 .folio__projects-container .folio__projects-container__project {
-    flex: 10;
-    margin: 5rem;
+    flex: 20% ;
+    margin: 1rem 7rem 1rem 7rem;
     /*padding: 1rem 3rem 1rem 3rem;*/
     min-width: 210px;
-    display: unset;
+    display: flex;
     flex-direction: column;
 }
 
