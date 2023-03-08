@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
+import { RiExternalLinkFill } from 'react-icons/ri';
 import './project.css'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -10,9 +11,9 @@ function Project(props) {
     <Card.Img className='folio__Project-Card-image' src={props.image} alt=""/>
     <Card.Body>
       <Card.Title className='folio__Project-Card-Title' >{props.name}</Card.Title>
-      <Card.Link className='folio__Project-Card-Link' href={props.pages} target="_blank"  rel="noreferrer noopener">View Deployed Site</Card.Link>
+      <Card.Link className='folio__Project-Card-Link' href={props.pages} target="_blank"  rel="noreferrer noopener">View Deployed Site <RiExternalLinkFill /></Card.Link>
       <br />
-      <Card.Link className='folio__Project-Card-Link' href={props.repo} target="_blank"  rel="noreferrer noopener">View Repository</Card.Link>
+      <Card.Link className='folio__Project-Card-Link' href={props.repo} target="_blank"  rel="noreferrer noopener">View Repository <RiExternalLinkFill /></Card.Link>
     </Card.Body>
   </Card>
     </div>
