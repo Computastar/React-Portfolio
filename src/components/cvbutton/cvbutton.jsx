@@ -78,6 +78,7 @@ function CVButton() {
         </p>
 
         <input
+          className='form-control'
           type="email"
           placeholder="EMail"
           onChange={(e) => {
