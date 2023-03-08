@@ -1,3 +1,4 @@
+
 .folio__projects-container__project {
     width: 100%;
     display: flex;
@@ -23,7 +24,7 @@
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.04em;
-    color: var(--colour-footer);
+    color: white;
 }
 
 
@@ -70,26 +71,10 @@
 }
 
 
-.folio__projects-container_project-deployed:hover
+.folio__Project-Card-Link:hover
 {
-    color: rgb(131, 10, 10);
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
-}
-
-.folio__projects-container_project-repository:hover
-{
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
-}
-
-.folio__projects-container_project-deployed{
-    color: rgb(218, 121, 30);
-    font-weight: 700;
-}
-
-.folio__projects-container_project-repository{
-    color: firebrick;
-    font-weight: 1000;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, .6);
 }
 
 .folio__Project-Card-image img{

@@ -1,4 +1,9 @@
 
+.folio__Project-Card{
+    --bs-card-border-color:white; 
+    --bs-card-bg: ; 
+  }
+  
 .folio__projects{
     display: flex;
     flex-direction: column;
@@ -83,6 +88,8 @@
 .folio__projects-container .folio__projects-container_project-text {
     margin-top: 0.5rem;
 }
+
+
 
 @media screen and (max-width: 850px) {
     .folio__projects-heading {
