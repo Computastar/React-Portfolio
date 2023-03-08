@@ -35,6 +35,7 @@ const Contact = () => {
       </div>
       <div className="folio__contact-content-CV">
             <CVButton></CVButton>
+            <br></br>
           </div>
       </div>
    </div>

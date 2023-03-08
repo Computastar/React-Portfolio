@@ -44,10 +44,11 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
+    margin-bottom: 0rem;
 }
 
 .folio__send-email-section {
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .folio__send-email {
@@ -85,15 +86,18 @@
     visibility: visible;
 }
 
+.folio__social-icons {
+    height:max-content
+}
+
 /* social icons class styling */
 .folio__social-icons li {
     list-style: none;
     display: inline-block;
     justify-content: center;
-    margin: 2em 0;
+
     padding: 1rem;
 }
-
 
 
 /* Font awesome hover styling */
@@ -102,6 +106,14 @@
 }
 
 
+.folio__contact-content {
+height: max-content;
+}
+
+.folio__cvbutton {
+    display: flex;
+    flex-direction: column;
+}
  
 .folio__contact-content-CV button {
     padding: 0.5rem 1rem;
