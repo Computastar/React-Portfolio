@@ -10,9 +10,6 @@ class Projects extends Component {
     projects
   }
 
-
-
-
 render()  {
   return (
     <div className='folio__projects section__Margin' id='projects'>

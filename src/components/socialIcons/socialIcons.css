@@ -1,0 +1,21 @@
+.folio__social-icons  {
+    height:max-content;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+/* social icons class styling */
+.folio__social-icons li {
+    list-style: none;
+    display: inline-block;
+    justify-content: center;
+
+    padding: 1rem;
+}
+
+
+/* Font awesome hover styling */
+.folio__social-icons li:hover {
+    opacity: 0.7;
+}

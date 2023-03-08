@@ -1,7 +1,7 @@
 
 import {React} from 'react';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import {  Contact, Home, Projects, Header} from './containers';
+import { BrowserRouter as  Router,Route, Routes} from 'react-router-dom';
+import {  Contact, Home, Projects, Header, Footer} from './containers';
 import './App.css';
 import { useState, useEffect } from 'react';
 import {AuthProvider} from '../src/services/AuthContext'
@@ -29,7 +29,7 @@ const App = () => {
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/contact" element={<Contact />} />
     </Routes>
-
+    <Footer />
     </AuthProvider>
     </div>
 
