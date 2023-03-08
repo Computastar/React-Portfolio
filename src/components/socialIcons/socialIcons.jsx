@@ -16,6 +16,9 @@ const SocialIcons = () => {
                     <li>
                       <SocialIcon url="https://www.linkedin.com/in/jason-hunter-3999171/" target="_blank" bgColor='purple'/>
                     </li>
+                    <li>
+                      <SocialIcon url="mailto:email@example.com?subject=Mail from our Website" target="_blank" bgColor='#6666ff'/>
+                    </li>
                 </ul>
               </div>
       </div>   

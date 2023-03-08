@@ -6,11 +6,12 @@
 
 
 .folio__contact-content {
-    flex: 1;
+    flex: 0.85;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    height:min-content;
 }
 
 .folio__contact-content h4 {
@@ -47,51 +48,16 @@
     margin-bottom: 0rem;
 }
 
-.folio__send-email-section {
-    padding: 2rem;
-}
 
-.folio__send-email {
-    color: var(--colour-text);
-    font-size: 18px;
-    text-align: center;
-    font-family: var(--font-family);
-    font-weight: 400;
-    line-height: 30px;
-}
 
-/* send email hover styling */
-.folio__send-email:hover {
-    color: var(--colour-text);
-    opacity: 0.8;
-}
-
-/* send email tooltip */
-.folio__send-email .send-email-tooltip {
-    visibility: hidden;
-    width: 120px;
-    margin: 15px;
-    background-color: #333;
-    columns: #fff;
-    text-align: center;
-    padding: 10px 0;
-    border-radius: 6px;
-    position: absolute;
-    color: white;
+.folio__container-contact {
+    width: 400px;
+    height: 500px;
+    margin: 100px;
+    padding: 0rem;
 }
 
 
-/* shows send email tooltip */
-.folio__send-email:hover .folio__send-email-tooltip {
-    visibility: visible;
-}
-
-
-
-
-.folio__contact-content {
-height: max-content;
-}
 
 .folio__cvbutton {
     display: flex;
@@ -121,6 +87,10 @@ height: max-content;
 
 @media screen and (max-width: 950px) {
     .folio__contact {
+        flex-direction: column;
+    }
+
+    .folio__contact-content {
         flex-direction: column;
     }
 

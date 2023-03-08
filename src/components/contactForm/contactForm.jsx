@@ -16,7 +16,7 @@ const ContactForm = () => {
         console.log(contactForm);
     };
     return (
-        <div className='container border p-5 rounded'>
+        <div className='folio__container-contactForm border p-5 rounded'>
             <h1 className='gradient__text'>Drop me a line</h1>
             <form onSubmit={onSubmit}>
                 <div className='mb-3'>
