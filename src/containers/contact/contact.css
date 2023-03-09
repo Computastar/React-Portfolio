@@ -85,7 +85,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1020px) {
     .folio__contact {
         flex-direction: column;
     }

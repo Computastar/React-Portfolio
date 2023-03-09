@@ -94,8 +94,12 @@
 @media screen and (max-width: 850px) {
     .folio__projects-heading {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         margin-bottom: 0rem;
+    }
+
+    .folio__projects-container {
+        align-content: center;
     }
 
     .folio__projects-heading p {

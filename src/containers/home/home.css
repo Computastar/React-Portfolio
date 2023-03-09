@@ -61,12 +61,22 @@
 @media screen and (max-width: 1050px) {
     .folio__home {
         flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
     }
 
     .folio__home-content {
         margin: 1rem 1rem 1rem 1rem;
     }
 
+    .folio__home-image {
+        margin: 1rem;
+    }
+
+    .folio__home-image img{
+    width:75%;
+    height: 75%;
+    }
  
 }
 
