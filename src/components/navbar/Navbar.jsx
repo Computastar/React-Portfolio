@@ -7,15 +7,16 @@ import './navbar.css'
 
 const Menu = () => (
 <>  
-<Link to='/' className='folio__navbar-links_container'>
+<Link to='/' >
       <p>home</p>
 </Link>
-<Link to='/projects' className='folio__navbar-links_container'>
+<Link to='/projects'>
       <p>projects</p>
 </Link>
-<Link to='/contact' className='folio__navbar-links_container'>
+<Link to='/contact' >
       <p>Contact</p>
 </Link>
+
 </>
 )
 
@@ -36,7 +37,7 @@ const NavBar = () => {
         ? <RiCloseLine color='#fff' size={27} onClick={() => setToggleMenu(false)} />
         : <RiMenu3Line color='#fff' size={27} onClick={() => setToggleMenu(true)} />}
         {toggleMenu && (
-          <div className="folio-menu_container scale-up-center">
+          <div className="folio__navbar-menu_container scale-up-center">
             <div className="folio__navbar-menu_container-links">
               <Menu />
             </div>
