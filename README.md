@@ -81,4 +81,4 @@ Any question, get intouch:
   Distributed under the MIT License See LICENSE.txt for more information
   
 ## Screenshot
-
+![React Portfolio](./src/assets/screenshot.jpeg)
