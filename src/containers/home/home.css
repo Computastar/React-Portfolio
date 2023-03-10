@@ -63,6 +63,7 @@
         flex-direction: column;
         align-content: center;
         flex-wrap: wrap;
+        padding-bottom: 56px;
     }
 
     .folio__home-content {

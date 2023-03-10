@@ -10,7 +10,7 @@
 
     padding-left: 3rem;
 
-    min-height: min-content;
+ 
    /* background: var(--colour-footer);*/
 
     /* ff 3.6+ */
@@ -75,6 +75,7 @@
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
+    padding-bottom: 56px;
 }
 
 /* Customizing project component as per needs */
