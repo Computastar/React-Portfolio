@@ -103,6 +103,13 @@
     .folio__home-content p {
         font-size: 14px;
         line-height: 24px;
+    } 
+
+    .folio__home-content h2 {
+        font-size: medium;
     }
 
+    .folio__home-content {
+        margin: 10px;
+    }
 }
